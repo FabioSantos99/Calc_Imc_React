@@ -23,6 +23,7 @@ function App() {
     const imcResult = (weightFloat / (heightFloat * heightFloat)).toFixed(1);
 
     setImc(imcResult);
+    console.log(height, weight);
 
     data.forEach((item) => {
       if (imcResult >= item.min && imcResult <= item.max) {
